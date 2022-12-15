@@ -8,9 +8,9 @@ body *::after {
   box-sizing: border-box;
 }
 
-[class] {
+/* [class] {
   margin: 0;
-}
+} */
 
 a {
   color: inherit;
