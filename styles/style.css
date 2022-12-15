@@ -3,3 +3,7 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+body {
+  background-color: var(--primary-color);
+}
