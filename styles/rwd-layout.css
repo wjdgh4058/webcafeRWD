@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.group1 .box {
+  background-color: aqua;
+}
+.group2 .box {
+  background-color: pink;
+}
+.group3 .box {
+  background-color: lightgreen;
+}
+.group4 .box {
+  background-color: skyblue;
+}
+.group5 .box {
+  background-color: salmon;
+}
+.group6 .box {
+  background-color: violet;
+}
+.group7 .box {
+  background-color: gold;
+}
+.group8 .box {
+  background-color: lightseagreen;
+}
+.group9 .box {
+  background-color: mediumpurple;
+}
+.group10 .box {
+  background-color: midnightblue;
+}
+.group11 .box {
+  background-color: olive;
+}
+.group12 .box {
+  background-color: yellow;
+}
+
+.container {
+  background-color: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 12px;
+}
+
+.box {
+  height: 150px;
+  margin: 12px;
+}
+
+div[class*="group"] {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  div[class*="group"] {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  div[class*="group"] {
+    width: 25%;
+  }
+}
