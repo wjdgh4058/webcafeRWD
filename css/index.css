@@ -89,7 +89,7 @@ input[type="search"] {
   color: var(--secondary-color);
   border: 1px solid currentColor;
 }
-/*  */
+
 /* 공통 메인 메뉴 */
 .menu__link {
   display: block;
