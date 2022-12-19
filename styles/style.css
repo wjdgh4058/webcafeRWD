@@ -101,29 +101,32 @@ input[type="search"] {
 
 /* 공통 추천 서적 */
 .book {
-  background-color: lightgreen;
-
-  grid-area: 2/1/4/5;
+  background: lightgreen;
+  grid-area: book;
 }
+
 /* 공통 새소식 */
 .news {
-  background-color: yellow;
-  grid-area: 1/1/2/13;
+  background: yellow;
+  grid-area: news;
 }
+
 /* 공통 게시판 */
 .board {
-  background-color: lightsalmon;
-  grid-area: 3/6/4/13;
+  background: lightsalmon;
+  grid-area: board;
 }
+
 /* 공통 인기 사이트 */
 .favorite {
-  background-color: aquamarine;
-  grid-area: 2/10/3/13;
+  background: skyblue;
+  grid-area: favorite;
 }
+
 /* 공통 트위터 */
 .twitter {
-  background-color: pink;
-  grid-area: 2/5/3/10;
+  background: burlywood;
+  grid-area: twitter;
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -168,7 +171,7 @@ input[type="search"] {
   .button--burgerBarTop,
   .button--burgerBarMiddle,
   .button--burgerBarBottom {
-    pointer-events: none;
+    /* pointer-events: none; */
     position: absolute;
     width: 100%;
     height: 20%;
@@ -206,7 +209,7 @@ input[type="search"] {
     transform: translateY(-50%) rotate(-45deg);
   }
 
-  /* 모바일 메인 메뉴 */
+  /* 모베알 메인 메뉴 */
   .menu__list {
     background: var(--accent-opacity-color);
     position: fixed;
@@ -218,6 +221,7 @@ input[type="search"] {
     backdrop-filter: blur(4px);
     padding: var(--spacing-lg);
     transform: translateX(-150%);
+    /* transition: all 600ms; */
   }
 
   .menu__item {
@@ -233,13 +237,16 @@ input[type="search"] {
   }
 
   /* 모바일 메인 콘텐츠 */
-
   .appMain {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-template-areas:
+      "book"
+      "news"
+      "board"
+      "favorite"
+      "twitter";
   }
-
-  /* 모바일 새소식 */
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -292,17 +299,19 @@ input[type="search"] {
     padding: var(--spacing-md) var(--spacing-lg);
     color: var(--white);
     font-size: 1.2rem;
-    font-weight: 700;
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
-}
 
-/* 데스크탑 메인 콘텐츠 */
-
-.appMain {
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  gap: var(--spacing-base);
+  /* 데스크탑 메인 콘텐츠 */
+  .appMain {
+    border: 5px solid red;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "news news news news news news news news news news news news"
+                         "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+                         "book book book book . board board board board board board board";
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
