@@ -300,7 +300,7 @@ input[type="search"] {
 /* 데스크탑 메인 콘텐츠 */
 
 .appMain {
-  grid-template-columns: 12 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: var(--spacing-base);
 }
