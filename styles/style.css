@@ -264,8 +264,50 @@ input[type="search"] {
 
 /* 공통 트위터 */
 .twitter {
-  /* background: burlywood; */
   grid-area: twitter;
+}
+
+.twitter__title {
+}
+.twitter__container {
+}
+
+.twitter__userInfo {
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+.twitter__Id {
+  color: var(--accent-twitter);
+}
+
+.twitter__userProfile {
+  width: 25%;
+  aspect-ratio: 1/1;
+  min-width: 3.125rem;
+  max-width: 5.625rem;
+  float: right;
+  shape-outside: circle(50%);
+  margin-left: var(--spacing-xs);
+}
+
+.twitter__userProfileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 40%;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+
+.twitter__summary {
+  line-height: 1.5;
+  margin-top: var(--spacing-base);
+}
+
+.twitter__date {
+  display: block;
+  margin-top: var(--spacing-xs);
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -463,6 +505,10 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+  }
+
+  .favorite__item {
+    margin-top: var(--spacing-sm);
   }
 }
 
