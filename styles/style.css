@@ -246,7 +246,7 @@ input[type="search"] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* width: calc(100% - 6.25em); */
+  width: calc(100% - 6.25em);
 }
 
 .board__date {
