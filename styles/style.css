@@ -214,6 +214,41 @@ input[type="search"] {
 .board {
   /* background: lightsalmon; */
   grid-area: board;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.board__title {
+  flex: 1 1 auto;
+}
+
+.board__more {
+  padding-top: var(--spacing-sm);
+}
+
+.board__list {
+  order: 1;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-sm);
+}
+
+.board__item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board__link {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__date {
+  flex: 0 0 auto;
 }
 
 /* 공통 인기 사이트 */
