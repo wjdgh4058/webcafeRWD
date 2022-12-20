@@ -348,7 +348,7 @@ input[type="search"] {
     transform: translateY(-50%) rotate(-45deg);
   }
 
-  /* 모베알 메인 메뉴 */
+  /* 모바일 메인 메뉴 */
   .menu__list {
     background: var(--accent-opacity-color);
     position: fixed;
@@ -385,6 +385,18 @@ input[type="search"] {
       "board"
       "favorite"
       "twitter";
+  }
+
+  /* 모바일 인기 사이트 */
+  .favorite__item {
+    margin-top: var(--spacing-sm);
+  }
+
+  .favorite__link::after {
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
   }
 }
 
