@@ -4,6 +4,12 @@
 @import url(./theme.css);
 @import url(./base.css);
 
+/* 공통 아이콘 (Font Awesome) */
+.far,
+.fas {
+  margin-right: var(--spacing-xs);
+}
+
 /* 모든 디바이스 (All Device) */
 /* 공통 헤더 */
 .appHeader {
@@ -196,6 +202,12 @@ input[type="search"] {
 .news {
   /* background: yellow; */
   grid-area: news;
+}
+
+.news__date {
+  display: block;
+  text-align: right;
+  margin-top: var(--spacing-xs);
 }
 
 /* 공통 게시판 */
