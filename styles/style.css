@@ -243,6 +243,7 @@ input[type="search"] {
 }
 
 .board__link {
+  flex: 0 1 auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
