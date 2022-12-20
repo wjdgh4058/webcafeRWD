@@ -33,8 +33,23 @@ img {
   height: auto;
 }
 
-video,
-iframe {
+video {
   width: 100%;
   height: auto;
+}
+
+/* 반응형 Iframe */
+.iframeWrapper {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  height: 0;
+}
+
+.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
