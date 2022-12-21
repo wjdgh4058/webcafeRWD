@@ -463,7 +463,11 @@ input[type="search"] {
   }
 
   /* 모바일 푸터 */
-  /* 모바일 푸터 */
+  .appMain {
+    font-size: var(--text-sm);
+  }
+
+  /* 모바일 주소 */
   .address {
     display: flex;
     flex-flow: column nowrap;
